@@ -2,12 +2,10 @@
 
 body{
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     margin: 0 0 0;
-    display: flex;
     font-family: monospace;
-    width: 100vw;
-    min-width: 600px;
+    min-width: 450px;
 }
 
 header{
@@ -20,18 +18,20 @@ header{
     left: 0;
 }
 .myheader{ 
+    flex: 1;
     display: flex;
     flex-flow: row wrap;
     width: 100vw;
-    height: 100vh;
     min-height: 635px;
-    min-width: 450px;
+    
+    margin-bottom: 1px;
+    bottom: 0;
 }
 
 .header-become{
     flex:1;
     display: flex;
-    min-width: 450px;
+    
     padding: 5.625rem 4.0625rem;
     flex-direction: column;
     justify-content: center;
@@ -42,12 +42,13 @@ header{
     background-position: 50%;
     background-size: cover;
     background-clip: border-box;
+    min-width: 400px;
 }
 
 .header-hire{
     flex: 1;
     display: flex;
-    min-width: 450px;
+    flex-wrap: wrap;
     padding: 5.625rem 4.0625rem;
     flex-direction: column;
     justify-content: center;
@@ -58,6 +59,7 @@ header{
     background-position: 50%;
     background-size: cover;
     background-clip: border-box;
+    min-width: 400px;
 }
 
 .question-container{
@@ -68,6 +70,7 @@ header{
 .h-question-1, .h-question-2, .h-question-1-left{
     display: flex;
     color: #FCFCFD;
+    flex: 1;
     font-size: 1.5rem;
     font-style: normal;
     font-weight:900;
@@ -112,4 +115,76 @@ header{
 .header-hire > .header-buttons{
     color: #1E1E1E; 
     background: #FCFCFD;
+}
+
+.section-container{
+    display: flex;
+    min-width: 365px;
+    flex: 1;
+    padding: 2.8125rem 5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background: #F1F2F3;
+    font-size: 2em;
+    font-weight: bolder;
+    
+
+}
+
+.section-header{
+    display: flex;
+    width: 100%;
+    line-height: 1.8em;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.section-title{
+    display: flex;
+    gap: 0.5em;
+    color: #363739;
+    font-size: 0.8em;
+    font-weight: 600;    
+}
+.section-symbol{
+    color: rgba(46, 228, 163);
+}
+
+.three-circles{
+    display: flex;
+    padding: 20px;
+    gap: 0.2em;
+}
+
+.circle{
+    border-radius: 20px;
+    height: 20px;
+    background-color: rgba(222,223,227,255);
+}
+
+.black{
+    background-color: #363739;
+}
+
+.green{
+    background-color: #2aeda8;
+}
+
+.yt-frame{
+    display: flex;
+    width: 100%;
+    
+    background-color: #2aeda8;
+    padding: 20px;
+    height: 40vw;
+    border: 0;
+    border-radius: 20px;
+}
+
+iframe{
+    border: 0;
+    
+    width: 100%;
+    
 }
