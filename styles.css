@@ -184,7 +184,47 @@ header{
 
 iframe{
     border: 0;
-    
-    width: 100%;
-    
+    width: 100%;   
 }
+
+.milestones{background-color: #FFF; color: #363739;}
+
+.milestone-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f2f4; 
+    border: 0; border-radius: 20px; 
+    margin: 0.3em; 
+    padding: 30px;
+    flex: 1;
+    width: fit-content;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.milestone-cards-container{
+    font-size: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 0.7em;
+    font-weight: 100;
+    width: 100%;
+}
+.milesone-main{flex: 1;}
+
+.milestone-four-cards{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.milestone-secondary{
+    flex: 1;
+    display: flex;
+}
+.card-1{flex-grow: 1.8;}
+.card-4{flex-grow: 1.2;}
+.milestone-card > h1{font-size: 2.5em; line-height: 0;}
+.milestone-card > p{font-size: 0.8em; line-height: 1;}
