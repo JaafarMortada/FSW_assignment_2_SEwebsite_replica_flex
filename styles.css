@@ -2,7 +2,7 @@
 
 body{
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     margin: 0 0 0;
     font-family: monospace;
     min-width: 450px;
@@ -21,7 +21,6 @@ header{
     flex: 1;
     display: flex;
     flex-flow: row wrap;
-    width: 100vw;
     min-height: 635px;
     
     margin-bottom: 1px;
@@ -90,6 +89,8 @@ header{
 .h-text{
     display: flex;
     width: 100%;
+    max-width: 1000px;
+    max-height: 600px; 
     flex-direction: column;
     flex-shrink: 0;
     color: #FFF;
@@ -128,8 +129,6 @@ header{
     background: #F1F2F3;
     font-size: 2em;
     font-weight: bolder;
-    
-
 }
 
 .section-header{
@@ -138,6 +137,7 @@ header{
     line-height: 1.8em;
     flex-flow: row wrap;
     justify-content: space-between;
+    max-width: 1000px;
 }
 
 .section-title{
@@ -163,18 +163,16 @@ header{
     background-color: rgba(222,223,227,255);
 }
 
-.black{
-    background-color: #363739;
-}
-
-.green{
-    background-color: #2aeda8;
-}
+.black{background-color: #363739;}
+.green{background-color: #2aeda8;}
+.white{background-color: #fcfaff;}
+.gray{background-color: #a0a9aa;}
 
 .yt-frame{
     display: flex;
     width: 100%;
-    
+    max-width: 1000px;
+    max-height: 600px;
     background-color: #2aeda8;
     padding: 20px;
     height: 40vw;
@@ -183,11 +181,16 @@ header{
 }
 
 iframe{
+    flex: 1;
     border: 0;
-    width: 100%;   
+    
 }
 
-.milestones{background-color: #FFF; color: #363739;}
+.milestones{
+    background-color: #FFF; 
+    color: #363739;
+    flex-wrap: wrap;
+}
 
 .milestone-card{
     display: flex;
@@ -207,9 +210,11 @@ iframe{
     font-size: 1em;
     display: flex;
     flex-flow: row wrap;
+    flex: 1;
     font-size: 0.7em;
     font-weight: 100;
     width: 100%;
+    max-width: 1000px;
 }
 .milesone-main{flex: 1;}
 
@@ -234,17 +239,128 @@ iframe{
 .partners-logos{
     display: flex;
     flex-wrap: wrap;
+    
+    max-width: 1000px;
     gap: 1em;
     height: 150px;
     justify-content: space-between;
-
+    height: fit-content;
 }
 
 .partners-logos > img{
     height: 80px;
-    max-width: 150px;
+    max-width: 100px;
     object-fit: contain;
     margin-bottom: 10px;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.programs{
+    background-color: #ffc736;
+}
+
+.programs > .section-header > .section-title{
+    background-color: #343838; 
+    color: #fdfaeb; 
+    padding: 0 1em;
+    margin-bottom: 0.8em;
+}
+
+.programs-details{
+    flex: 1;
+    
+}
+
+.programs-header{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 0.7em;
+}
+
+.prog{
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    border: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #1E1E1E;
+    font-size: 0.7em;
+}
+
+.shown-prog{
+    background-color: #363739;
+    color: #ffc736;
+    padding: 0.5em 1.5em;   
+}
+
+.program-discription-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #363739;
+    max-width: 1000px;
+    flex: 1;
+    padding: 20px;
+    font-size: 0.4em;
+    color: #f2feff;
+    font-weight: 100;
+    border: 0;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    gap: 1em;
+}
+.discription{
+    display: flex;
+    flex: 1;
+    flex-flow: column wrap;
+}
+.discription-title{
+    flex: 1;
+    display: flex;
+    
+    gap: 0.2rem;
+    font-weight: 900;
+    font-size: 1.5em;
+    max-height: 3em;
+}
+
+.t-color{color: #ffc736; font-weight: 900; flex-wrap: nowrap;}
+
+.discription-btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+.prg-btn{
+    flex: 1;
+    font-size: 1em;
+    font-weight: 100;
+    flex-grow: 1.2;
+}
+
+.prg-btn-2{
+    flex: 1;
+    width: 50%;
+    text-align: end;
+    font-size: 1em;
+    font-weight: 900;
+    cursor: pointer;
+    
+}
+
+.prg-img{
+    max-width: 400px;
+    max-height: 400px;
+    min-height: 100px;
+    border-radius: 10px;
+}
+
+.t-b{
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
