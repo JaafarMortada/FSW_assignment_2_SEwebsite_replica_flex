@@ -439,16 +439,50 @@ details[open] summary ~ * {
     animation: sweep 0.5s ease-in-out;
   }
   
-  @keyframes sweep {
+@keyframes sweep {
     0%    {opacity: 0; margin-left: -10px}
     100%  {opacity: 1; margin-left: 0px}
-  }
+}
 
-  .inline-colors{
+.inline-colors{
     display: flex;
     gap: 0.5em;
-  }
+}
 
-  .inline-color{
+.inline-color{
     color: rgba(46, 228, 163);
-  }
+}
+
+.subscribe{
+    background-color: #363739;
+    flex-flow: row wrap;
+}
+
+.subscribe-left{
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    min-width: 425px;
+}
+
+.subscribe-right{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    height: 1.5em;
+}
+.subscribe >.subscribe-left > .section-header > .section-title{color: #f4ffff;}
+
+.sub-text{
+    font-size: 0.5em;
+    font-weight: 100;
+    color: #a0a59f;
+}
+
+.sub-email{
+    padding: 13px 10px;
+}
+
+.sub-btn{
+    font-size: 0.5em;
+}
