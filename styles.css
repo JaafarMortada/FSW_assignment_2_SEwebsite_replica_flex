@@ -364,3 +364,91 @@ iframe{
     flex-flow: column wrap;
     justify-content: space-between;
 }
+
+.FAQs{
+    background-color: #363739;
+    color: #fbfef3;
+}
+
+.FAQs > .section-header > .section-title{
+    color: #fdfaeb; 
+
+}
+
+.faqs-details{
+    width: 100%;
+}
+
+details{
+    margin-bottom: 0.5em;
+}
+summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232323;
+    font-size: 0.5em;
+    font-weight: 900;
+    padding: 20px;
+    list-style: '\203A' ;
+    list-style: none;
+    border: 0;
+    border-radius: 15px;
+}
+
+.summery-title{
+    display: flex;
+    gap: 0.5em;
+}
+
+summary::after {
+    display: flex;
+    transition: 0.2s;
+    font-size: 2em;
+    content: '\203A' ; /* chevron */
+    transform: rotate(90deg);
+    
+  }
+
+details[open] summary::after {
+    transform: rotate(-90deg);
+  }
+
+.faq-btn{
+    flex: 1;
+    width: 100%;
+    text-align: end;
+    font-size: 0.35em;
+    cursor: pointer;
+}
+
+.faq-answers{
+    font-size: 0.5em;
+    font-weight: 100;
+    color: #bec5d6;
+    padding: 30px;
+    margin-top: -25px;
+    background-color: #232323;
+    border: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* https://stackoverflow.com/a/38215801 */
+details[open] summary ~ * {
+    animation: sweep 0.5s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+
+  .inline-colors{
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .inline-color{
+    color: rgba(46, 228, 163);
+  }
