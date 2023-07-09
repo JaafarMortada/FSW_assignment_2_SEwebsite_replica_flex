@@ -180,10 +180,9 @@ header{
     border-radius: 20px;
 }
 
-iframe{
+.yt-frame>iframe{
     flex: 1;
     border: 0;
-    
 }
 
 .milestones{
@@ -745,4 +744,122 @@ details[open] summary ~ * {
     flex: 1;
     flex-flow: column wrap;
     gap: 1em;
+}
+
+.sef-footer{
+    background-color: #232323;
+}
+
+.footer-main-top{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 1em;
+}
+
+.footer-top-left{
+    flex: 1;
+    display: flex;
+    flex-flow: row ;
+    min-width: 240px;
+}
+
+.f-t-l-l, .f-t-l-r{
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: end;
+}
+
+.footer-top-right{
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer-main-bottom{
+    flex: 1;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    max-width: 1000px;
+}
+.footer-main-bottom>div{
+    display: flex; 
+    flex: 1; 
+    padding: 0; 
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 350px;
+    
+    justify-content: center;
+}
+
+.privacy{
+    justify-content: center;
+}
+.footer-main-bottom>div>a ,.f-t-l-l>div>a, .f-t-l-r>div>a{
+    text-decoration: none;
+    color: #d2d6d1;
+    opacity: 60%;
+    font-size: 0.5em;
+    
+}
+
+.footer-main-bottom>div>p{
+    text-decoration: none;
+    color: #d2d6d1;
+    font-size: 0.4em;
+    font-weight: 100;
+
+}
+.footer-main-bottom>div>a:hover, .f-t-l-l>div>a:hover, .f-t-l-r>div>a:hover{
+    opacity: 100%;
+    color: #23f1a7;
+    transition: 0.4s;
+    
+}
+
+.f-t-l-l>div>.noeffect , .f-t-l-l>div>.noeffect:hover{
+    opacity: 100%;
+    color: #d2d6d1;
+    cursor: auto;
+}
+
+.socials{
+    flex: 1;
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    min-width: 238px;
+}
+
+.socials>button{
+    opacity: 80%;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    padding-top: 4px;
+    border-radius: 5px;
+}
+
+.socials>button:hover{
+    opacity: 100%;
+    transition: 0.4s;
+
+}
+
+.socials>button>img{
+    width: 24px;
+    height: 24px;
+}
+
+.footer-logo{
+    display: flex;
+    flex:1;
+
 }
