@@ -485,6 +485,8 @@ details[open] summary ~ * {
 
 .sub-email{
     padding: 13px 10px;
+    max-width: 250px;
+    max-height: 50px;
 }
 
 .sub-btn{
