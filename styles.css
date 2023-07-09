@@ -600,3 +600,144 @@ details[open] summary ~ * {
 }
 
 .testimonials-scroll-btn-current{background-color: #212123;}
+
+.contact-us{
+    background-color: #29eea7;
+}
+
+.contact-us > .section-header > .section-title{
+    background-color: #343838; 
+    color: #fdfaeb; 
+    padding: 0 1em;
+    margin-bottom: 0.8em;
+}
+
+.contact-us-main-container{
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap-reverse;
+    gap: 0.5em;
+    width: 100%;
+    min-width: 400px;
+}
+
+.contact-us-left-container{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #363739;
+    border-radius: 15px;
+    padding: 25px;
+    flex: 1;
+    min-width: 250px;
+    gap: 0.5em;
+}
+
+.contact-us-right-container{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #363739;
+    flex: 1;
+    flex-grow: 2.5;
+    border-radius: 15px;
+    padding: 25px;
+    padding-right: 35px;
+    padding-left: 35px;
+    min-width: 400px;
+}
+
+.sef-location{
+    border-radius: 15px;
+    margin: auto;
+    flex: 1;
+    display: flex;
+}
+
+.map{
+    display: flex;
+}
+
+.contact-us-titles{
+    color: #a1abb4;
+    font-size: 0.5em;
+    font-weight: 900;
+}
+
+.contact-us-titles > h6{
+    color: #FFF;
+    font-weight: 900;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+.contact-us-titles >p{
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+
+.contact-us-right-container >p{
+    color: #ffffff;
+    font-size: 0.4em;
+}
+.contact-us-right-container > .inline-color{
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+.form-row{
+    display: flex;
+    color: #ffffff;
+    font-size: 0.4em;
+    flex: 1;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.label-textinput {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 1em;
+    flex: 1;
+    
+}
+
+.label-textinput>input{
+    padding: 10px;
+}
+
+.label-radioinput{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    height: fit-content;
+    min-width: 104px;
+}
+
+.label-textinput-inq>input{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 120px;
+}
+
+.form-btn-container{
+    flex: 1;
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.form-btn-container>button{
+    border: 0;
+    background-color: #23f1a7;
+    color: #363739;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-us-left-container-divider{
+    display: flex;
+    flex: 1;
+    flex-flow: column wrap;
+    gap: 1em;
+}
