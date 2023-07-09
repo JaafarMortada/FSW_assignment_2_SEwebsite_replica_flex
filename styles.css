@@ -845,6 +845,7 @@ details[open] summary ~ * {
     padding: 0;
     padding-top: 4px;
     border-radius: 5px;
+    border: 0;
 }
 
 .socials>button:hover{
