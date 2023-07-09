@@ -365,11 +365,15 @@ iframe{
     justify-content: space-between;
 }
 
-.FAQs{
+.FAQs ,.hire-talent{
     background-color: #363739;
     color: #fbfef3;
 }
 
+.hire-talent > .section-header > .section-title{
+    color: #fdfaeb; 
+
+}
 .FAQs > .section-header > .section-title{
     color: #fdfaeb; 
 
@@ -422,7 +426,7 @@ details[open] summary::after {
     cursor: pointer;
 }
 
-.faq-answers{
+.faq-answers, .HR-list{
     font-size: 0.5em;
     font-weight: 100;
     color: #bec5d6;
@@ -485,4 +489,61 @@ details[open] summary ~ * {
 
 .sub-btn{
     font-size: 0.5em;
+}
+
+.HR-container{
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    gap: 1em;
+}
+
+.HR-text-field, .HR-learn-more{
+    flex: 1;
+    background-color: #232323;
+    color: #f4ffff;
+}
+
+.HR-text-field{
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.HR-text-field>h6{
+    font-size: 0.6em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.inline-colors-HR{
+    background-color: #373739;
+    font-size: 0.5em;
+    font-weight: 100;
+    padding: 20px;
+    width: fit-content;
+
+}
+
+.HR-list{
+    margin: 0;
+    padding-right: 1em;
+}
+
+.HR-text{
+    padding-top: 0;
+}
+
+.HR-learn-more{
+    display: flex;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 0.5em;
+    font-weight: 100;
+    gap: 1.5em;
+    justify-content: end;
+}
+
+.HR-learn-more-text{
+    padding-top: 15px;
 }
