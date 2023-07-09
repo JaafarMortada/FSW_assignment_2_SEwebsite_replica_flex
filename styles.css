@@ -621,6 +621,7 @@ details[open] summary ~ * {
     gap: 0.5em;
     width: 100%;
     min-width: 400px;
+    justify-content: center;
 }
 
 .contact-us-left-container{
@@ -631,6 +632,7 @@ details[open] summary ~ * {
     padding: 25px;
     flex: 1;
     min-width: 250px;
+    max-width: 350px;
     gap: 0.5em;
 }
 
@@ -645,6 +647,7 @@ details[open] summary ~ * {
     padding-right: 35px;
     padding-left: 35px;
     min-width: 400px;
+    max-width: 650px;
 }
 
 .sef-location{
