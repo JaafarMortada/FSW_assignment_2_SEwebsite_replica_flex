@@ -296,7 +296,7 @@ iframe{
     padding: 0.5em 1.5em;   
 }
 
-.program-discription-container{
+.program-discription-container, .testimonials-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -547,3 +547,56 @@ details[open] summary ~ * {
 .HR-learn-more-text{
     padding-top: 15px;
 }
+
+.testimonials-container{
+    border-radius: 15px;
+}
+
+.testimonial{
+    padding: 3em;
+}
+
+.testimonial-text{
+    font-size: 1.2em;
+}
+
+.tiny-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+}
+
+
+.testimonial-name-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.testimonial-name-container>.inline-colors{
+    flex-direction: column;
+    gap: 0;
+    
+}
+
+.testimonial-name-container>.inline-colors>h2{line-height: 0;}
+
+.testimonial-name-container>.inline-colors>p>b{
+    color: #2aeda8;
+
+}
+.testimonial-name-container>.inline-colors>p{
+    padding: 0;
+    margin: 0;    
+}
+
+.testimonials-scroll-btn{
+    border: 0;
+    background-color: #a6a6a8;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.testimonials-scroll-btn-current{background-color: #212123;}
